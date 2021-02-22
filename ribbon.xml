@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customUI onLoad="ribbonLoaded"
+    xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+    xmlns:nsFX="FX_Namespace">
+
+    <ribbon>
+        <tabs>
+            <tab idQ="nsFX:fxtabFX" label="FX" insertAfterMso="TabHome" keytip="C">
+                <!-- Organize Sheets -->
+                <group id="grpSheets" label="Sheets">
+                    <!-- Cropping -->
+                    <splitButton id="splitBtnCrop" size="normal" keytip="CR">
+
+                        <menu id="menuCropButtons" itemSize="normal">
+
+                            <button id="Crop" label="Crop"
+                                    imageMso="SnapToGrid" supertip="Hides all rows and columns after the active cell."
+                                    onAction="Fx_Callback"/>
+
+                            <button id="UnCrop" label="UnCrop"
+                                    imageMso="GridShowHide"
+                                    supertip="Unhides all rows and columns after the active cell."
+                                    onAction="Fx_Callback"/>
+                        </menu>
+
+                    </splitButton>
+
+                    <!-- Hide / Unhide -->
+                    <button id="UnhideAll" label="Unhide All" size="normal"
+                            imageMso="GroupSourceControlManage" keytip="NHA"
+                            supertip="Unhides all in the workbook, including very-hidden sheets."
+                            onAction="Fx_Callback"/>
+
+                    <separator id="grpSheets_Separator1"/>
+
+                    <button id="HideNotSelected" label="Hide Not Selected" size="normal"
+                            imageMso="FieldsUpdate" keytip="HA"
+                            supertip="Hides all sheets, that are not selected."
+                            onAction="Fx_Callback"/>
+
+                    <button id="VeryHideSelected" label="Very Hide Selected" size="normal"
+                            imageMso="SlideDelete" keytip="HH"
+                            supertip="Very hides selected sheets."
+                            onAction="Fx_Callback"/>
+
+                    <separator id="grpSheets_Separator2"/>
+                    
+                    <!-- Protect / Unprotect -->
+                    <button id="Protect" label="Protect All" size="normal"
+                            imageMso="SheetProtect" keytip="PA"
+                            supertip="Protects all sheets."
+                            onAction="Fx_Callback"/>
+
+                    <button id="Unprotect" label="Unprotect All" size="normal"
+                            imageMso="AccessFormDatasheet" keytip="NPA"
+                            supertip="Unprotects all sheets."
+                            onAction="Fx_Callback"/>
+
+                </group>
+
+                <group id="grpFileWindow" label="File Window">
+                
+                    <!-- Zoom All Split Active Window -->
+                    <button id="ZoomAll" label="Zoom All" size="normal"
+                            imageMso="ZoomPrintPreviewExcel" keytip="OA"
+                            supertip="Zooms all visible sheets to selected percentage."
+                            onAction="Fx_Callback"/>
+
+                    <!-- Split Active Window -->
+                    <button id="SplitHorizontal" label="Split Horizontal" size="normal"
+                            imageMso="WindowSplit" keytip="WH"
+                            supertip="Splits active window horizontally."
+                            onAction="Fx_Callback"/>
+
+                    <button id="SplitVertical" label="Split Vertical" size="normal"
+                            imageMso="ViewSideBySide" keytip="WV"
+                            supertip="Splits active window vertically."
+                            onAction="Fx_Callback"/>
+                </group>
+
+                <!-- VBA -->
+                <group id="grpVba" label="VBA">
+
+                    <!-- Export / Import / Delete modules -->
+                    <button id="Export" label="Export" size="normal"
+                            imageMso="XmlExport" keytip="EP"
+                            supertip="Exports selected modules from VBProject."
+                            onAction="Fx_Callback"/>
+                            
+                    <button id="Import" label="Import" size="normal"
+                            imageMso="XmlImport" keytip="IP"
+                            supertip="Imports selected modules from VBProject."
+                            onAction="Fx_Callback"/>
+
+                    <button id="Delete" label="Delete" size="normal"
+                            imageMso="SlideDelete" keytip="DEL"
+                            supertip="Deletes selected modules from VBProject."
+                            onAction="Fx_Callback"/>
+                </group>
+            </tab>
+
+        </tabs>
+    </ribbon>
+</customUI>
