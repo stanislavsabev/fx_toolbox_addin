@@ -8,4 +8,4 @@ Excel Add-In with Ribbon menu 'FX' to add useful functionalities
 - Zoom In / Zoom Out
 
 ### Manage VBA source code: 
-- export / import code modules
+- Export / Import / Delete code modules
