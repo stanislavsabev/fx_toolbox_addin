@@ -1,10 +1,10 @@
 # FX toolbox Add-In
 
-Excel Add-In to add Ribbon menu 'FX' with useful functionalities like:
+Excel Add-In with Ribbon menu 'FX' to add useful functionalities
 
-### Manage Excel sheets in bulk
-- Hiding / Unhiding, including 'very hidden' sheets
-- Protecting / Unprotecting
+### Manage multiple Excel sheets in bulk
+- Hide / Unhide, including 'very hidden' sheets
+- Protect / Unprotect
 - Zoom In / Zoom Out
 
 ### Manage VBA source code: 
