@@ -2,10 +2,10 @@
 
 Excel Add-In to add Ribbon menu 'FX' with useful functionalities like:
 
-# Managing Excel sheets in bulk
+### Manage Excel sheets in bulk
 - Hiding / Unhiding, including 'very hidden' sheets
 - Protecting / Unprotecting
 - Zoom In / Zoom Out
 
-# Manage VBA source code: 
+### Manage VBA source code: 
 - export / import code modules
