@@ -1,4 +1,4 @@
-# toolbox_addin
+# FX toolbox Add-In
 
 Excel Add-In to add Ribbon menu 'FX' with useful functionalities like:
 
